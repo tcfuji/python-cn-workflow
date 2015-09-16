@@ -1,0 +1,6 @@
+.DS_Store
+clutter
+mem.csv
+threshold_mat.npz
+timeseries
+.ipynb_checkpoints/
