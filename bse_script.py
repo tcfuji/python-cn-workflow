@@ -36,8 +36,8 @@ def fast_flatten(X):
     k = 0
     length = X.shape[0] * X.shape[1]
     X_flat = empty(length)
-    for i in xrange(X.shape[0]):
-        for j in xrange(X.shape[1]):
+    for i in range(X.shape[0]):
+        for j in range(X.shape[1]):
             X_flat[k] = X[i, j]
             k += 1
     return X_flat
@@ -55,8 +55,8 @@ def thresh_mat(X, threshold):
     min_val = min_thresh_val(X, threshold)
     print("Done with min_thresh_val")
     # M = zeros((X.shape[0], X.shape[1]))
-    for i in xrange(X.shape[0]):
-        for j in xrange(X.shape[1]):
+    for i in range(X.shape[0]):
+        for j in range(X.shape[1]):
             # if X[i, j] >= min_val:
                 # M[i, j] = X[i, j]
             if X[i, j] < min_val:
