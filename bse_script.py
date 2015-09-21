@@ -1,8 +1,9 @@
+from pandas import Series
 from igraph import *
 from numba import jit
 import numpy as np
 import os
-import time
+# import time
 
 # Gather all the files.
 files = os.listdir('timeseries/')
